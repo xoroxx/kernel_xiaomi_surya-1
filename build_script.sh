@@ -35,7 +35,7 @@ GCC32_DIR="" # Doesn't needed if use proton-clang
 CLANG_FILE="/mnt/workdir/clang.tar.gz"
 
 apt-get update && upgrade -y
-apt-get install cpio python3 xz-utils -y
+apt-get install cpio python3 xz-utils default-jdk -y
 
 git clone https://github.com/kdrag0n/proton-clang --depth=1 --single-branch $CLANG_DIR
 
