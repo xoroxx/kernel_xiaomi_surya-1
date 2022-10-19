@@ -12,5 +12,5 @@ steps:
         from_secret: CHATID
     commands: 
       - "bash build_script.sh"
-    image: azrim89/kernel:latest
+    image: fadlyas/kernel_dockerfile
     name: Build
