@@ -22,8 +22,8 @@ PARSE_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 PARSE_ORIGIN="$(git config --get remote.origin.url)"
 COMMIT_POINT="$(git log --pretty=format:'%h : %s' -1)"
 CHEAD="$(git rev-parse --short HEAD)"
-LATEST_COMMIT="[$COMMIT_POINT](https://github.com/silont-project/kernel_xiaomi_surya/commit/$CHEAD)"
-LOGS_URL="[See Drone CI Build Logs Here](https://cloud.drone.io/silont-project/kernel_xiaomi_surya/$DRONE_BUILD_NUMBER)"
+LATEST_COMMIT="[$COMMIT_POINT](https://github.com/xoroxx/kernel_xiaomi_surya-1/commits/$CHEAD)"
+LOGS_URL="[See Drone CI Build Logs Here](https://cloud.drone.io/xoroxx/kernel_xiaomi_surya-1/$DRONE_BUILD_NUMBER)"
 
 # Compiler
 mkdir -p "/mnt/workdir/silont-clang"
