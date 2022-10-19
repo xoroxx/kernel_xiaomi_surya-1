@@ -34,6 +34,9 @@ GCC_DIR="" # Doesn't needed if use proton-clang
 GCC32_DIR="" # Doesn't needed if use proton-clang
 CLANG_FILE="/mnt/workdir/clang.tar.gz"
 
+apt-get update && upgrade -y
+apt-get install cpio python3 xz-utils -y
+
 git clone https://github.com/kdrag0n/proton-clang --depth=1 --single-branch $CLANG_DIR
 
 if [[ "${COMP_TYPE}" =~ "clang" ]]; then
@@ -48,7 +51,7 @@ DEFCONFIG="surya_defconfig"
 REGENERATE_DEFCONFIG="" # unset if don't want to regenerate defconfig
 
 # Telegram
-CHATID="-1001156668998" # Group/channel chatid (use rose/userbot to get it)
+CHATID="${CHANNEL_ID}" # Group/channel chatid (use rose/userbot to get it)
 TELEGRAM_TOKEN="${TG_TOKEN}"
 
 # Export Telegram.sh
